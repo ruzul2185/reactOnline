@@ -1,9 +1,12 @@
 
 
-const Home = () => {
+const Home = ({ data, print }) => {
+    // data fetch from backend
+    const message = "Properties are passed to Home";
     return(
         <div>
-            THis is repeating
+           {print(message)}
+           {console.log(data)}
         </div>
     )
 }
