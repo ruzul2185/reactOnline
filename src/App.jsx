@@ -1,4 +1,5 @@
 import Home from './Home';
+import Count from './Count';
 
 import { useState } from 'react';
 
@@ -6,7 +7,7 @@ import { useState } from 'react';
 // This is an arrow function component that returns a simple JSX element.
 const App = () => {
 
-  const [count, setCount] = useState(0);
+  
   const [username, setUsername] = useState("");
   const [password,setPassword] = useState("");
 
@@ -30,9 +31,7 @@ const App = () => {
   return (
     <div>
       <Home print={print} data={message} />
-      <button onClick={() => {setCount(count+1)}}>
-        Count is {count}
-      </button>
+      <Count />
       <div>
         <input type='text' name="username" value={username} onChange={handlerUsername}/>
         <span>{username}</span>
