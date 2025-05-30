@@ -32,6 +32,7 @@ const App = () => {
     <div>
       <Home print={print} data={message} />
       <Count />
+      {/* Login starting */}
       <div>
         <input type='text' name="username" value={username} onChange={handlerUsername}/>
         <span>{username}</span>
@@ -40,6 +41,7 @@ const App = () => {
         <input type='password' name="password" value={password} onChange={handlePassword}/>
         <span>{password}</span>
       </div>
+      {/* Login end */}
     </div>
   )
 }
