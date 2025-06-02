@@ -1,15 +1,16 @@
 import Home from './Home';
 import Count from './Count';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 // This is an arrow function component that returns a simple JSX element.
 const App = () => {
 
-  
   const [username, setUsername] = useState("");
   const [password,setPassword] = useState("");
+
+  
 
   // data fetch from backend
   const message = "Properties are passed to home";
@@ -30,7 +31,7 @@ const App = () => {
 
   return (
     <div>
-      <Home print={print} data={message} />
+      <Home/>
       <Count />
       {/* Login starting */}
       <div>
