@@ -28,9 +28,7 @@ const Login = () => {
       </div>
       {/* Login end */}
 
-      <button onClick={()=>{
-        navigate("/count")
-      }}>Count</button>
+      <div>Don't have an account? <span style={{color:"blue", cursor:"pointer"}} onClick={()=>{navigate("/count")}}>Sign Up Now!</span></div>
     </div>)
 }
 
